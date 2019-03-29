@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet"> -->
+
+<style>
+  #cat-photo-form {
+    background-color:green;
+  }
+  .red-text {
+    color: red;
+  }
+  p {
+    font-size: 16px;
+    font-family: monospace;
+  }
+  h2 {
+    font-family: 'Lobster', monospace;
+  }
+  .smaller-image {
+    width: 100px;
+  }
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+  .silver-background {
+    background-color: silver;
+  }
+</style>
+
+<html lang="en" dir="ltr">
+  <h1>FCC First Project</h1>
+  <head>
+    <meta charset="utf-8">
+    <title>hello</title>
+  </head>
+  <body>
+    <h2 class="red-text" >CatPhotoApp</h2>
+
+    <main>
+      <p class="red-text">Click here to view more <a href="#">cat photos</a>.</p>
+
+      <a href="#"><img class="smaller-image thick-green-border" src="https://bit.ly/fcc-relaxing-cat" alt="A cute orange cat lying on its back."></a>
+      <!-- <a href="#footer">Jump to bottom</a> -->
+      <div class="silver-background">
+
+        <p>Things cats love:</p>
+        <ul>
+          <li>Milk</li>
+          <li>Tuna</li>
+          <li>Cheese</li>
+        </ul>
+
+        <p>Top 3 things cats hate:</p>
+        <ol>
+          <li>Dogs</li>
+          <li>Wind</li>
+          <li>Dark</li>
+        </ol>
+      </div>
+
+      <form id="cat-photo-form" action="/submit-cat-photo" method="post">
+
+        <input type="text" placeholder="cat photo URL" required>
+        <button type="submit" >Submit</button>
+        <p>Indoor/Outdoor</p>
+        <label for="indoor">
+          <input id="indoor" type="radio" name="indoor-outdoor" checked>Indoor
+        </label>
+        <label for="outdoor">
+          <input id="outdoor" type="radio" name="indoor-outdoor">Outdoor
+        </label>
+        <p>Cat Personality</p>
+        <label for="loving">
+          <input id="loving" type="checkbox" name="personality" checked>loving
+        </label>
+        <label for="aggressive">
+          <input id="aggressive" type="checkbox" name="personality">aggressive
+        </label>
+        <label for="annoying">
+          <input id="annoying" type="checkbox" name="personality">annoying
+        </label>
+      </form>
+    </main>
+
+  </body>
+
+  <footer id="footer">
+    Copyright Cat photo app
+  </footer>
+</html>
